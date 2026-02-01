@@ -269,7 +269,7 @@ export default function Home() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                  className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-orange-500 focus:ring-orange-500"
                 />
               </div>
               <div>
@@ -283,7 +283,7 @@ export default function Home() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                  className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-orange-500 focus:ring-orange-500"
                 />
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function Home() {
                 id="organization"
                 value={formData.organization}
                 onChange={handleChange}
-                className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-orange-500 focus:ring-orange-500"
               />
             </div>
             <div>
@@ -311,7 +311,7 @@ export default function Home() {
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-orange-500 focus:ring-orange-500"
               />
             </div>
             <div>
