@@ -11,12 +11,49 @@ export default function Home() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "7dfb756a-d1ba-4c4c-9062-bd93008482a0",
+          name: formData.name,
+          email: formData.email,
+          organization: formData.organization,
+          message: formData.message,
+          subject: "New Contact Form Submission from Aunova Website",
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          organization: "",
+          message: "",
+        });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setError("Failed to send message. Please check your connection.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -280,13 +317,19 @@ export default function Home() {
             <div>
               <button
                 type="submit"
-                className="w-full rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-orange-600"
+                disabled={isSubmitting}
+                className="w-full rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
               {submitted && (
-                <p className="mt-4 text-center text-green-600">
+                <p className="mt-4 text-center text-green-600 font-medium">
                   Thank you! We'll be in touch soon.
+                </p>
+              )}
+              {error && (
+                <p className="mt-4 text-center text-red-600 font-medium">
+                  {error}
                 </p>
               )}
             </div>
