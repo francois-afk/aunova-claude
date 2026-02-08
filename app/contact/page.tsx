@@ -87,7 +87,7 @@ export default function Contact() {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-black shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-black shadow-sm focus:border-teal-500 focus:ring-teal-500"
               />
             </div>
             <div>
@@ -101,7 +101,7 @@ export default function Contact() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-black shadow-sm focus:border-orange-500 focus:ring-orange-500"
+                className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-black shadow-sm focus:border-teal-500 focus:ring-teal-500"
               />
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function Contact() {
               id="organization"
               value={formData.organization}
               onChange={handleChange}
-              className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+              className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
             />
           </div>
           <div>
@@ -129,14 +129,14 @@ export default function Contact() {
               required
               value={formData.message}
               onChange={handleChange}
-              className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-orange-500 focus:ring-orange-500"
+              className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
             />
           </div>
           <div>
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full rounded-full bg-teal-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-teal-600 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? "Sending..." : "Send Message"}
             </button>

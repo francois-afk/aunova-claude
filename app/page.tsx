@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 to-white px-6 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 to-white px-6 py-20 md:py-32">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 md:text-6xl lg:text-7xl">
-              <span className="text-orange-500">Modular EHR</span> Software
+              <span className="text-teal-500">Modular EHR</span> Software
               <br />
               Built for Your Practice
             </h1>
@@ -19,13 +19,13 @@ export default function Home() {
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-6">
               <Link
                 href="/contact"
-                className="rounded-full bg-orange-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-orange-600"
+                className="rounded-full bg-teal-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition hover:bg-teal-600"
               >
                 Contact Us
               </Link>
               <Link
                 href="/about"
-                className="rounded-full border-2 border-orange-500 px-8 py-4 text-lg font-semibold text-orange-500 transition hover:bg-orange-50"
+                className="rounded-full border-2 border-teal-500 px-8 py-4 text-lg font-semibold text-teal-500 transition hover:bg-teal-50"
               >
                 Learn More
               </Link>
