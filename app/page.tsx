@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 to-white px-6 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-teal-50 to-white px-6 py-16 md:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-4 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left relative z-10">
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 md:text-6xl lg:text-7xl">
@@ -32,11 +32,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image - larger, no frame, blended edges */}
-          <div className="relative h-[500px] lg:h-[600px]">
-            {/* Gradient overlay to blend edges */}
-            <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-r from-teal-50/80 via-transparent to-transparent" />
-            <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-teal-50/60 via-transparent to-teal-50/40" />
+          {/* Hero Image - large, no frame, no fade */}
+          <div className="relative h-[550px] lg:h-[700px]">
             <Image
               src="/hero-africa.jpg"
               alt="Healthcare technology connecting Africa"
