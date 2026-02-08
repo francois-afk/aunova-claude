@@ -35,12 +35,11 @@ export default function Home() {
           {/* Hero Image */}
           <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop"
-              alt="Medical professional using digital healthcare software on tablet"
+              src="/hero-africa.jpg"
+              alt="Healthcare technology connecting Africa"
               fill
               className="object-cover"
               priority
-              unoptimized
             />
           </div>
         </div>
