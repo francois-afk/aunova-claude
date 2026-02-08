@@ -93,7 +93,7 @@ export default function About() {
               },
               {
                 title: "Analytics",
-                description: "View summarised statistics including patients seen, new vs recurring patients, frequent diagnoses, and clinic performance metrics",
+                description: "Track clinic performance, identify patient trends, and gain diagnostic insights with advanced analytics and reporting",
                 icon: "analytics",
                 comingSoon: false,
               },
