@@ -15,8 +15,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aunova | Modular EHR Software",
-  description: "Modular EHR Software Built for Healthcare Professionals",
+  title: "Aunova | Modular EHR Software for Africa",
+  description: "Clinician-led Electronic Health Record software built for healthcare professionals across Africa. Choose the modules you need - patient information, AI integration, analytics, and more.",
+  keywords: ["EHR", "Electronic Health Record", "healthcare software", "medical software", "Africa", "patient management", "clinic software"],
+  openGraph: {
+    title: "Aunova | Modular EHR Software for Africa",
+    description: "Clinician-led Electronic Health Record software built for healthcare professionals across Africa.",
+    siteName: "Aunova",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aunova | Modular EHR Software for Africa",
+    description: "Clinician-led Electronic Health Record software built for healthcare professionals across Africa.",
+  },
 };
 
 export default function RootLayout({
