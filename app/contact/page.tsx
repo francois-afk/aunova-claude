@@ -63,18 +63,18 @@ export default function Contact() {
   };
 
   return (
-    <section className="bg-gray-50 px-6 py-20 min-h-screen">
+    <section className="bg-gray-50 px-4 md:px-6 py-12 md:py-20 min-h-screen">
       <div className="mx-auto max-w-3xl">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
             Get In Touch
           </h1>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-3 md:mt-4 text-base md:text-lg text-gray-600">
             Ready to build your perfect EHR? Let's talk about your needs.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="mt-12 space-y-6">
+        <form onSubmit={handleSubmit} className="mt-8 md:mt-12 space-y-5 md:space-y-6">
           <div className="grid gap-6 md:grid-cols-2">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
